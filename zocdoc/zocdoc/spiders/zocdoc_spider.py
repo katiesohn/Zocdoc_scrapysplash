@@ -43,7 +43,7 @@ class ZocdocSpider(Spider):
 		+ str(i) for i in range(151, 251)]
 		specialties_1 = []
 		for specialty in specialties:
-			for i in range(0, 100, 10):
+			for i in range(0, 101, 10):
 				specialties_1.append(specialty + '&address=New+York%2C+NY&offset=' + str(i))
 
 		for url in specialties_1:
